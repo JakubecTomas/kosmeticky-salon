@@ -1,0 +1,153 @@
+.percent__services-text h4 {
+color: black;
+font-size: 1.875rem;
+padding-top: var(--m__article);
+}
+
+.percent__services-text p {
+    color: var(--main-color);
+    font-weight: bold;
+    padding: 1rem 5%;
+    font-size: 1.25rem;
+}
+
+.percent__services h5 {
+    text-align: center;
+    background-color: white;
+    padding-top: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.percent__services article {
+    padding: 10px;
+}
+
+.percent-block {
+    background-color: white;
+    margin: 0;
+    padding: .5rem 1.5rem 1.5rem 1.5rem;
+    padding-top: .5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 30px;
+    /* width: 300px; */
+    width: 200px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.percent-block svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.percent-60,
+.percent-40{
+    width: 160px;
+    height: 160px;
+    background: white;
+    position: relative;
+    margin: auto;
+}
+
+.base-circle{
+    height: 150px;
+    width: 150px;
+    margin-top: 20px;
+    border-radius: 50%;
+    border: 3px solid var(--second-color);
+}
+
+#numbersixty,
+#numberfourty {
+    position: absolute;
+    font-weight: bold;
+    margin-top: 65px;
+    z-index: 2;
+    opacity: 0.4;
+    font-size: 3rem;
+    color: black;
+    /* margin-left: 100px; */
+    margin-left: 55px;
+}
+
+.main-circlesixty.active,
+.shadow-circlesixty {
+    fill: none;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    stroke: #455660;
+    animation: anim 1.5s linear forwards;
+}
+@keyframes anim {
+    100%{
+        stroke-dashoffset: 189;
+    }
+}
+
+.main-circlesixty {
+    stroke: white;
+    stroke-width: 20px;
+    opacity: 0.8;
+    fill: white;
+}
+
+.main-circlefourty.active,
+.shadow-circle {
+    fill: none;
+    stroke-dasharray: 473;
+    stroke-dashoffset: 472;
+    animation: anim-40 1.5s linear forwards;
+    stroke: #BB9870;
+    /* animation-delay: 1s; */
+}
+@keyframes anim-40 {
+        100%{
+            stroke-dashoffset: 280;
+        }
+}
+
+.main-circlefourty {
+    stroke: white;
+    stroke-width: 20px;
+    opacity: 0.8;
+    fill: white;
+}
+
+.shadow-circle,
+.shadow-circlesixty {
+    stroke: white;
+    stroke-width: 30px;
+}
+
+/* - - - - - - - - - RINGS - - - - - - - - - */
+
+.ring{
+    background-color: white;
+    display: flex;
+}
+.ring-left svg {
+    width: 140px;
+    z-index: 1;
+    position: relative;
+}
+.ring-left.active svg{
+    transition: 900ms;
+	-webkit-transform: rotate(-4deg);
+			transform: rotate(-4deg);
+}
+
+.ring-right svg {
+    width: 160px;
+    position: relative;
+    margin-left: -50px;
+    margin-top: 0;
+}
+.ring-right.active svg{
+    transition: 1200ms;
+	-webkit-transform: rotate(4deg);
+			transform: rotate(4deg);
+    margin-left: -40px;
+    margin-top: 10px;
+}

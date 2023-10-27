@@ -1,0 +1,132 @@
+@page {
+    size: A4;
+    margin: 10px;
+  }
+
+
+@media print {
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#content,#page {
+    width: 100%; 
+    margin: 0; 
+    float: none;
+    }
+
+
+/* layout page */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+html {
+    background-image: none;
+}
+
+nav,
+.header__block,
+.eco,
+.next-step,
+footer {
+    display: none;
+}
+
+
+.final-information,
+.summary-content h2 {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    padding-left: 35%;
+    padding-right: 35%;
+}
+
+.summary-content .logo {
+    display: flex;
+    width: 50%;
+}
+
+
+/* detailing */
+.summary-content h2 {
+    text-transform: uppercase;
+    font-size: 26px;
+    padding-top: 15px 0 20px 0;
+}
+
+.summary-content {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.final-summary {
+    margin: auto;
+    box-shadow: none;
+    background-color: rgb(242, 235, 227);
+}
+
+.gifted--final-summary-detail p {
+    padding: 5px;
+    border-bottom: none;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 18px;
+}
+
+#voucher-code {
+    padding-top: 25px;
+}
+
+.final-voucher p:first-child {
+    font-weight: bold;
+    font-size: 22px;
+    padding-bottom: 25px;
+}
+
+.final-summary p:last-child {
+    padding-bottom: 5px;
+}
+
+.print-white {
+    background: white;
+    width: 75%;
+    margin: auto;
+}
+
+#gifted--remove-name {
+    padding: 15px 0;
+
+
+}
+
+#gifted--remove-price {
+    padding-bottom: 15px;
+
+}
+
+.final-information {
+    flex-direction: column;
+    padding-top: 15px;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-top: 50px;
+    width: 70%;
+    margin: auto;
+    font-size: 14px;
+    text-align: center;
+}
+
+.final-reservation {
+    margin-bottom: 24px;
+}
+
+.final-address {
+    font-size: 18px;
+}
+
+}

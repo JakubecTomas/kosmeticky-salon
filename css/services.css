@@ -1,0 +1,1371 @@
+.services__content h4,
+.gallery__content h4 {
+    color: black;
+    padding-top: var(--m__section);
+    text-align: center;
+}
+
+.services__content h6,
+.gallery__content h6 {
+    color: var(--main-color);
+}
+
+.services__package h6 {
+    color: black;
+    padding: var(--m__article);
+}
+
+.services__content .perex {
+    text-align: center;
+    text-transform: none;
+    font-size: 1.25rem;
+    padding: 0 10% var(--m__article) 10%;
+}
+
+/* - - - - - - - - - - - -  NABIDKA SLUZEB  - - - - - - - - - - - - */
+.nav-services {
+    grid-column: 2 / 12;
+    grid-template-rows: 1fr;
+    padding: var(--m__article) 15%;
+}
+
+.nav-services__main-solo,
+.nav-services__main {
+    text-transform: uppercase;
+    padding: 20px 0;
+    border-top: 1px var(--second-color) solid;
+    font-size: 1.25rem;
+    width: 100%;
+}
+
+.nav-services__main:first-child {
+    border-top: none;
+}
+
+.nav-services__main {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    justify-content: space-between;
+}
+.nav-services__main-header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    text-align: left;
+}
+
+.nav-services__main-header div {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    text-align: center;
+}
+
+.nav-services__main-header svg {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    justify-self: end;
+}
+
+.nav-services__main-solo:first-child {
+    border: none;
+}
+
+.nav-services a {
+    text-decoration: none;
+}
+
+#subnav-services li,
+#subnav-services__make-up li {
+    padding: 5px;
+}
+
+#subnav-services li:last-child,
+#subnav-services__make-up li:last-child {
+    padding-bottom: 20px;
+}
+
+.percent__services,
+.percent__services-text,
+.percent__services-more_text,
+.inspiration-services {
+    grid-column: 2 / 12;
+    grid-row: 2 / 3;
+    margin: auto;
+}
+
+
+  
+.dropdown + .nav-services__main-header {
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+}
+    
+.dropdown ~ .nav-services__main-header .side-icon {
+    display: block;
+    transition: 500ms;
+}
+  
+.dropdown:checked ~ .nav-services__main-header .side-icon {
+    rotate: 180deg;
+    fill: var(--third-color);
+    transition: 300ms;
+    
+}
+  
+.dropdown ~ .content {
+    display: none;
+}
+  
+.dropdown:checked ~ .content {
+    display: block;
+    text-transform: none;
+    padding-top: 20px;
+}
+
+
+/* - - - - - - - - - - - -  procenta  - - - - - - - - - - - - */
+
+.percent__box {
+    display: grid;
+    grid-column: 2 / 12;
+    grid-row: 2 / 3;
+
+}
+
+.percent__services {
+    grid-row: 3 / 4;
+    display: flex;
+    flex-direction: column;
+}
+
+.percent__services-more_text {
+    grid-row: 4 / 5;
+    padding: var(--m__article) 5%;
+    line-height: 24px;
+    font-size: 1.2rem;
+}
+
+.percent__services-more_text p {
+    padding-bottom: 15px;
+    
+}
+
+.percent__services-more_text p:last-child {
+    padding-top: 20px;
+}
+
+.inspiration-services {
+    grid-row: 5 / 6;
+    border-top: 1px var(--third-color) solid;
+    width: 90%;
+}
+.inspiration-services ul {
+    padding: var(--m__article) 5% 20px 5%;
+}
+
+.inspiration-services li {
+    padding-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.inspiration-services li:first-child {
+    font-weight: bold;
+}
+
+.inspiration-services p {
+    padding: 0 5%;
+    opacity: .5;
+}
+
+/* - - - - - - - - - - - -  POLOZKY  - - - - - - - - - - - - */
+.services__item-tip {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    border-top: 1px rgba(194, 194, 194, 0.3) solid;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.tip {
+    color: white;
+    height: 25px;
+    font-weight: 100;
+    text-align: center;
+    font-size: 1.125rem;
+    background-color: var(--main-color);
+    border-radius: 50px;
+    padding: 3px 20px;
+    width: 40px;
+    margin: 10px auto;
+}
+
+
+/* - - - - - - - - - - - -  balicek sluzeb  - - - - - - - - - - - - */
+.services__item-important,
+.services__item {
+    width: 70%;
+    margin: auto;
+    padding: var(--m__article);
+    background-color: var(--bg__main-important);
+    border-radius: 10px;
+}
+.services__item,
+.services__item-important {
+    background-color: var(--bg__main-block);
+    margin-bottom: 20px;
+}
+
+.services__item-block h3,
+.services__item-main h3,
+.services__item-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+}
+
+.services__item-block .upper {
+    font-size: 1.1rem;
+    color: black;
+}
+
+.services__item-block h3 .upper {
+    font-size: inherit;
+}
+
+.services__item-price,
+.services__item-text {
+    padding: 15px 0 5px 0;
+    line-height: 25px;
+}
+
+.services__item-price {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.order-voucher {
+    text-align: center;
+    margin: 40px 0 30px 0;
+}
+
+.order-voucher a:hover {
+    opacity: .7;
+    transition: 250ms;
+    -webkit-transition: 250ms;
+    -moz-transition: 250ms;
+    -ms-transition: 250ms;
+    -o-transition: 250ms;
+}
+
+#balicek-obsahuje {
+    padding-top: 10px;
+}
+#balicek-obsahuje .upper {
+    font-size: 1.2rem;
+}
+
+.services__item-text {
+    font-size: 1.2rem;
+    opacity: 0.7;
+}
+
+.services__item-text p:first-child {
+    padding-bottom: 10px;
+}
+
+.services__package .services__item-price,
+.services__package .services__item-text {
+    font-weight: bold;
+}
+.services__package .services__item-text {
+    padding: 0 0 20px 0;
+}
+
+.services__package .services__item-text {
+    border-bottom: 3px white solid;
+}
+
+.services__item-text ol {
+    padding-left: 5%;
+}
+
+.services__item-time {
+    opacity: .5;
+    font-size: 1rem;
+    padding: 10px 0;
+}
+.services__item-slave {
+    font-size: 1.8rem;
+    color: var(--main-color);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.services__item-text ul {
+    padding-left: 5%;
+}
+
+
+/* - - - - - - - - - - - -  pristrojove osetreni  - - - - - - - - - - - - */
+.services__item-text li {
+    padding: 7px 0;
+}
+
+.dermobooster-important__video {
+    background-color: white;
+    border-radius: 15px;
+    width: 100%;
+    margin: auto;
+    border: 1px rgba(255, 255, 255, 20) solid;
+    margin: 25px auto;
+}
+
+.dermobooster-important__video .video__img {
+    padding: 20px;
+}
+
+.dermobooster-important__video h5 {
+    font-size: 1.25rem;
+    text-align: center;
+    padding: 15px 0;
+    font-weight: 400;
+}
+
+.dermobooster-important {
+    color: white;
+    font-weight: bold;
+    font-size: 1.4rem;
+    background-color: rgba(255, 0, 0, 0.65);
+    padding: 20px 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+.dermobooster-important__list p {
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.pristroj_popis {
+    margin-top: 40px;
+}
+
+.pristroj_popis img {
+    width: 20px;
+    padding: 0 5px 0 5px;
+    margin-bottom: -5px;
+}
+
+
+/* - - - - - - - - - - - -  slider  - - - - - - - - - - - - */
+.slider-ref {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column: 1 / 13;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    margin-top: var(--m__article);
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.score {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.testimonial {
+    position: relative;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    margin-top: 20px;
+}
+
+.slider {
+    padding-bottom: 50px;
+}
+
+.slider p {
+    text-align: center;
+    padding: 5px 10%;
+    font-size: 1.1rem;
+    line-height: 25px;
+}
+.slider p:first-child {
+    padding-top: 30px;
+    font-weight: bold;
+}
+.slider p:last-child {
+
+    margin-bottom: 30px;
+}
+
+.slider .reference__name {
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 70%;
+    border-left: none;
+    border-top: 1px solid var(--second-color);
+    font-size: 1.2rem;
+    color: var(--third-color);
+    font-weight: bold;
+    padding-top: 20px;
+    
+}
+
+.nav-btn {
+display: none;
+}
+
+
+@media all and (min-width: 59em) {
+.nav-btn {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border: 2px solid var(--second-color);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: 300ms;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -ms-transition: 300ms;
+    -o-transition: 300ms;
+    z-index: 1;
+}
+    
+.nav-btn:hover {
+    background-color: var(--second-color);
+    border: 2px solid var(--second-color);
+}
+     
+.nav-btn::after,
+.nav-btn::before {
+    font-size: 20px;
+    color: var(--third-color);    
+}
+.swiper-pagination {
+    z-index: 1;
+}
+
+.swiper-pagination-bullet {
+    background-color: var(--main-color);
+    height: 10px;
+    width: 10px;
+    transition: 400ms;
+    -webkit-transition: 400ms;
+    -moz-transition: 400ms;
+    -ms-transition: 400ms;
+    -o-transition: 400ms;
+}
+.swiper-pagination-bullet-active {
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    transition: 300ms;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -ms-transition: 300ms;
+    -o-transition: 300ms;
+}
+
+}
+
+
+/* - - - - - - - - - - - -  sezonni kura  - - - - - - - - - - - - */
+#sezonni-kura .services__item-text p:first-child {
+    font-weight: bold;
+}
+#sezonni-kura .services__item-text p:nth-child(2) {
+    padding-bottom: 15px;
+}
+
+#sezonni-kura .services__item-text {
+    display: flex;
+    flex-direction: row;
+}
+
+#sezonni-kura .sezonni-kura-kalendar {
+    width: 90px;
+    padding-left: 10px;
+    padding-right: 20px;
+    align-self: center;
+}
+
+#peeling-resurfacant .services__item-text p:first-child {
+    font-weight: bold;
+}
+
+/* - - - - - - - - - - - -  glysalac  - - - - - - - - - - - - */
+#glysalac {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+#glysalac .services__item-block h3 {
+    grid-column: 1 / 13;
+}
+#glysalac .services__item-price {
+    grid-column: 1 / 13;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 2;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#glysalac .services__item-price p:nth-child(1) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+#glysalac .services__item-price p:nth-child(2) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    justify-self: right;
+}
+#glysalac .services__item-price p:nth-child(3) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+#glysalac .services__item-price p:nth-child(4) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    justify-self: right;
+}
+
+
+#glysalac .services__item-time {
+    grid-column: 1 / 10;
+    grid-row: 3 / 4;
+}
+
+
+
+
+/* --- modal --- */
+.services__item-block button {
+    width: 100%;
+    margin-top: 2rem;
+    background-color: var(--main-color);
+    color: white;
+    font-size: 1.2rem;
+    padding: 20px 15px;
+    text-decoration: none;
+    text-transform: none;
+    box-shadow: none;
+}
+
+.services__item-block button:hover {
+    background-color: rgb(255, 165, 153);
+    transition: 300ms;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -ms-transition: 300ms;
+    -o-transition: 300ms;
+}
+
+
+.modal {
+    text-align: center;
+    margin: auto;
+    padding: 1rem;
+    width: 70%;
+    border: 0;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.modal[open] {
+    display: flex;
+    flex-direction: column;
+}
+  
+.modal::backdrop {
+    background: rgb(0 0 0 / 0.2);
+}
+
+.modal h2 {
+    font-size: 1.8rem;
+    padding-bottom: 20px;
+}
+
+.modal-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal .close-button,
+.modal .close-antiage {
+    background-color: white;
+    color: black;
+    font-weight: normal;
+    text-transform: none;
+    box-shadow: none;
+    border:none;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.modal .modal-buttons a {
+    outline: 0;
+    box-shadow: none;
+    font-size: 1.4rem;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 20px;
+    background-color: var(--bg__main-important);
+    border: 1px solid var(--bg__main-important);
+    margin: 20px 5%;
+    order: -1;
+}
+
+.modal .modal-buttons a:hover {
+    border: 1px solid var(--frm-highlight);
+    color: var(--frm-highlight);
+    transition: 300ms;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -ms-transition: 300ms;
+    -o-transition: 300ms;
+}
+
+.close-button p,
+.close-antiage p {  
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.modal .close-button img,
+.modal .close-antiage img {
+    width: 25px;
+    margin-top: 0;
+    padding: 3px 10px 0 0;
+}
+
+
+
+/* - - - - - - - - - - - -  TELOVE OSETRENI  - - - - - - - - - - - - */
+#telove-osetreni h2 {
+    padding-bottom: 40px;
+}
+
+#liceni h2 {
+    padding-top: var(--m__section);
+}
+
+.body__shower {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.shower-text {
+    grid-column: 2 / 12;
+    align-self: center;
+}
+
+.shower-img {
+    grid-column: 2 / 12;
+    padding-top: 20px;
+}
+
+.shower-img img {
+    border-radius: 10px;
+}
+
+.shower-text p:nth-child(1) {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    padding-top: 1rem;
+    background-image: linear-gradient(90deg, #443A2D, #554E45, #3B3023);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.shower-text p:nth-child(2){
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    padding-top: 20px;
+}
+
+
+/* - - - - - - - - - - - -  LICENI  - - - - - - - - - - - - */
+.make-up__rings {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.rings-text {
+    grid-column: 2 / 12;
+    font-size: 1.35rem;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.ring__link-gallery {
+    font-size: 1.25rem;
+    font-weight: bold;
+    grid-column: 2 / 12;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.make-up__img {
+    grid-column: 5 / 9;
+}
+
+.wedding__bride-img {
+    text-align: center;
+}
+
+.wedding__bride-img img {
+    border-radius: 10px;
+    width: 60%;
+}
+
+.timeless {
+    padding: var(--m__article);
+    text-align: center;
+}
+.timeless p:first-child{
+    font-size: 2.25rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-image: linear-gradient(90deg, #C3B29F, #BD9F7C, #C3B29F);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; 
+}
+.timeless p:nth-child(2) {
+    font-size: 1.5rem;
+    padding-top: 15px;
+}
+
+.timeless p:nth-child(2),
+.timeless p:nth-child(3) {
+    font-size: 1.75rem;
+}
+.timeless p:nth-child(2) {
+    padding-top: 20px;
+    padding-bottom: 10px;
+
+}
+
+.timeless p:nth-child(3) {
+    padding-top: 10px;
+}
+
+/* - - - - - - - - - wedding Q&A - - - - - - - - - */
+.wedding__q-a {
+    padding: 30px 8%;
+    margin: 20px 5% 40px 5%;
+    border: 1px var(--second-color) solid;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    border-radius: 15px;
+}
+
+.wedding__q-a p:nth-child(1),
+.wedding__q-a p:nth-child(3) {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.wedding__answer {
+    color: var(--main-color);
+    font-size: 1.7rem;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: right;
+}
+
+.wedding__answer a {
+    color: black;
+}
+
+.wedding__answer img {
+    display: none;
+}
+
+/* - - - - - - - - - RINGS - - - - - - - - - */
+.ring{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.ring-left svg {
+    width: 100%;
+    z-index: 1;
+    position: relative;
+}
+.ring-left.active svg{
+    transition: 900ms;
+	-webkit-transform: rotate(-4deg);
+			transform: rotate(-4deg);
+}
+
+.ring-right svg {
+    width: 100%;
+    position: relative;
+    margin-left: -50px;
+    margin-top: 0;
+}
+.ring-right.active svg{
+    transition: 1200ms;
+	-webkit-transform: rotate(4deg);
+			transform: rotate(4deg);
+
+	-webkit-transform: translateX (40px);
+            transform: translateX (40px);
+    margin-top: 10px;
+}
+
+
+/* - - - - - - - - - - - -  pod carou  - - - - - - - - - - - - */
+.services__under-line {
+    margin: 60px 40px;
+}
+
+.under-line__without-img {
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.under-line__without-img p:first-child {
+    padding-bottom: 15px;
+}
+
+.under-line__with-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: var(--m__article);
+}
+
+.under-line-img {
+    width: 17%;
+    max-width: 180px;
+}
+.under-line-text {
+    width: 90%;
+    text-align: center;
+}
+
+
+
+@media all and (min-width: 38em) {
+    /* - - - - - - - - - - - -  procenta  - - - - - - - - - - - - */
+    .percent__services {
+        flex-direction: row;
+    }
+    
+    .percent__services-text {
+        text-align: center;
+    }
+
+    .dermobooster-important {
+        margin: auto 20%;
+    }
+    .dermobooster-important__video {
+        width: 70%;
+    }
+
+
+    .services__under-line {
+        width: 65%;
+        margin: var(--m__section) auto;
+    }
+
+    .under-line__without-img {
+        border-left: 1px var(--main-color) solid;
+        padding-left: 20px;
+        text-align: left;
+    }
+
+    .under-line__with-img {
+        flex-direction: row;
+    }
+    .under-line-text {
+        width: 80%;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .services__item-block button {
+        grid-column: 8 / 13;
+        margin-top: 0;
+    }
+        
+    .services__item button {
+            grid-column: 6 / 13;
+    }
+
+}
+
+
+@media all and (min-width: 59em) {
+
+/* - - - - - - - - - - - - NABIDKA SLUZEB  - - - - - - - - - - - - */  
+
+.nav-services {
+    padding: var(--m__article) 0;
+    grid-template-columns: repeat(5, 1fr);
+    box-sizing: border-box;
+}
+.nav-services label {
+    box-sizing: border-box;
+}
+
+
+.nav-services__main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-top: none;
+    justify-self: stretch;
+    border-right: 1px var(--second-color) solid;
+    padding-left: 20px;
+}
+
+.nav-services__main-solo {
+    border-top: none;
+    border-right: 1px var(--second-color) solid;
+    justify-self: center;
+    padding-left: 20px;
+}
+#gallery label:first-child {
+    padding-right: 30px;
+}
+
+.nav-services__main:nth-child(3) {
+    display: flex;
+    padding-top: 20px;
+    margin-top: 0;
+    border-right: none;
+}
+
+.nav-services__main-solo:last-child {
+    border-right: none;
+    border-left: 1px var(--second-color) solid;
+
+}
+
+.nav-services__main:first-child {
+    grid-column: 1 / 3;
+}
+
+
+.nav-services__main-header {
+    grid-column: 1 / 2;
+    align-self: start;
+}
+
+.face,
+.makeup {
+    padding-left: 20px;
+    cursor: default;
+}
+.makeup {
+    padding-left: 10px;
+}
+
+.nav-services__main-solo,
+.nav-services__main-header div {
+    text-align: left;
+}
+
+.dropdown ~ .nav-services__main-header .side-icon,
+.dropdown:checked ~ .nav-services__main-header .side-icon {
+display: none;
+}
+
+.dropdown ~ .content {
+    display: block;
+    grid-column: 2 / 3;
+    text-transform: none;
+    text-align: left;
+    font-size: 1rem;
+}
+
+
+
+
+.dropdown:checked ~ .content {
+    padding-top: 0;
+}
+
+#subnav-services li a,
+#subnav-services__make-up li a {
+    color: black;
+}
+
+.content ul:nth-child(1) {
+    padding-top: 30px;
+    padding-left: 0;
+}
+
+
+
+.dropdown ~ #content-gallery {
+    grid-column: 1 / 3;
+}
+
+#gallery .nav-services__main {
+    border: none;
+}
+
+#gallery .nav-services__main-solo:first-child {
+    border-right: 1px var(--second-color) solid;
+}
+
+/* - - - - - - - - - - - -  procenta  - - - - - - - - - - - - */
+.percent__box {
+    display: grid;
+    grid-template-columns: repeat(3,fr);
+    grid-template-rows: 250px auto;
+    grid-row: 2 / 3;
+    grid-column: 2 / 12;
+    margin: var(--m__article) 0;
+}
+
+.percent__services-text {
+    grid-column: 5 / 13;
+    grid-row: 1 / 2;
+    margin: 0;
+    padding-top: 0;
+    text-align: left;
+}
+.percent__services-text h4 {
+    padding-left: 5%;
+}
+
+
+.percent__services {
+    grid-column: 2 / 5;
+    grid-row: 1 / 3;
+    flex-direction: column;
+}
+
+.percent__services-more_text {
+    grid-column: 5 / 13;
+    grid-row: 2 / 3;
+    padding-top: 0;
+    margin-top: 0;
+
+}
+
+/* - - - - - - - - - - - -  inspirace  - - - - - - - - - - - - */
+.inspiration-services ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.inspiration-services li {
+    padding-right: 40px;
+}
+
+
+/* - - - - - - - - - - - -  POLOZKY  - - - - - - - - - - - - */
+.services__item {
+    width: 55%;
+}
+
+/* - - - - - - - - - - - -  sluzby  - - - - - - - - - - - - */
+.services__package .services__item-important {
+    display: flex;
+    flex-direction: row;
+}
+.services__package .services__item-price {
+    text-align: left;
+    padding-top: 20px;
+}
+
+.services__item-important {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+.services__item-block h3 {
+    grid-column: 2 / 8;
+}
+.services__item-price {
+    grid-column: 8 / 12;
+}
+.services__item-text {
+    grid-column: 2 / 7;
+}
+
+.dermobooster-column {
+    grid-column: 1 / 13;
+    grid-row: 3 / 5;
+    display: flex;
+    flex-direction: row;
+}
+.dermobooster-left {
+    order: 1;
+    padding-top: 50px;
+}
+.dermobooster-right {
+    order: 2;
+}
+
+.dermobooster-important {
+    margin: 20px 10%;
+}
+
+.dermobooster-important__video {
+    width: 100%;
+}
+
+.services__item-slave {
+    justify-content: center;
+    padding: 0;
+    margin: auto;
+    font-size: 2rem;
+}
+
+
+.services__item {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+.services__item-block h3 {
+    grid-column: 2 / 9;
+    align-self: start;
+}
+.services__item-text,
+.services__item p {
+    grid-column: 2 / 12;
+}
+
+.services__item-price {
+    grid-column: 10 / 12;
+    grid-row: 1 / 2;
+    padding: 0;
+    text-align: right;
+    align-self: center;
+}
+.services__item-time {
+    grid-column: 2 / 12;
+    grid-row: 3 / 4;
+}
+
+.order-voucher {
+    grid-column: 2 / 12;
+}
+
+#sezonni-kura .services__item-time {
+    grid-row: 4 / 5;
+}
+.services__item p {
+    grid-row: 3 / 4;
+}
+#sezonni-kura .sezonni-kura-kalendar {
+    width: 60px;
+    padding-right: 15px;
+}
+
+.services__item-tip {
+    flex-direction: row;
+    grid-column: 2 / 12;
+}
+
+.services__item-tip .tip {
+    width: 10%;
+    max-width: 30px;
+}
+
+.services__item-tip p {
+    text-align: left;
+    width: 90%;
+    padding-left: 30px;
+    margin: auto;
+}
+
+#glysalac .services__item-block h3 {
+    grid-column: 2 / 12;
+}
+#glysalac .services__item-price {
+    grid-column: 6 / 12;
+}
+#glysalac .services__item-price p:nth-child(1),
+#glysalac .services__item-price p:nth-child(3) {
+    text-align: left;
+}
+#glysalac .services__item-time {
+    grid-column: 2 / 12;
+}
+
+.shower-text {
+    grid-column: 2 / 6;
+}
+
+.shower-img {
+    grid-column: 6 / 12;
+}
+
+.services__item-block button {
+grid-column: 9 / 13;
+margin-top: 0;
+}
+
+.services__item button {
+    grid-column: 8 / 13;
+}
+
+.modal {
+    width: 60%;
+}
+
+.modal-buttons {
+    flex-direction: row-reverse;
+}
+
+.modal .modal-buttons a {
+    padding: 25px;
+}
+
+.modal .close-button,
+.modal .close-antiage {
+    margin:auto;
+}
+
+
+/* - - - - - - - - - - - -  LICENI  - - - - - - - - - - - - */
+#svatebni-liceni .perex {
+    padding: 0;
+}
+
+.make-up__img {
+    grid-column: 9 / 11;
+
+}
+
+.rings-text {
+    grid-column: 3 / 8;
+    text-align: right;
+    align-self: center;
+    font-size: 1.6rem;
+}
+
+.second p:first-child {
+    padding: 20px 20%;
+}
+
+
+#wedding__content {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+.wedding__bride-img {
+    grid-column: 2 / 5;
+    grid-row: 1 / 4;
+    width: 100%;
+    align-self: center;
+    border-radius: 10px;
+    padding-right: 30px;
+}
+.wedding__bride-img img {
+    border-radius: 10px;
+}
+
+#wedding__content .services__item {
+    grid-column: 5 / 11;
+    width: 100%;
+}
+
+#wedding__content .dermobooster-important {
+    grid-column: 1 / 13;
+}
+
+#wedding__content .dermobooster-important p:first-child {
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    line-height: 25px;
+    border-bottom: 1px rgba(255, 255, 255, 0.3) solid;
+    margin-bottom: 10px;
+}
+
+#wedding__content .dermobooster-important p:last-child {
+    padding-top: 15px;
+    font-weight: 400;
+}
+
+#kurzy-liceni {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+#kurzy-liceni h6 {
+    grid-column: 1 / 13;
+}
+#kurzy-liceni .perex {
+    grid-column: 1 / 13;
+}
+.make-up__main-img {
+    grid-column: 2 / 12;
+}
+
+
+.wedding__q-a {
+    margin: 20px 10% 40px 10%;
+    transition: 300ms;
+}
+.wedding__q-a:hover,
+.wedding__q-a:focus {
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.wedding__answer img {
+    display: grid;
+    width: 150px;
+    margin-right: 50px;
+    opacity: 0.5;
+}
+
+.wedding__answer {
+    padding-top: 40px;
+}
+
+
+/* - - - - - - - - - - - -  pod carou  - - - - - - - - - - - - */
+.services__under-line {
+    width: 50%;
+}
+
+.under-line-img {
+    max-width: 60px;
+}
+}

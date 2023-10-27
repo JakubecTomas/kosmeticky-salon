@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<!-- favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="images/icon/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/icon/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/icon/favicon/favicon-16x16.png">
+<link rel="manifest" href="images/icon/favicon/site.webmanifest">
+<link rel="mask-icon" href="images/icon/favicon/safari-pinned-tab.svg" color="#514a40">
+<link rel="shortcut icon" href="images/icon/favicon/favicon.ico">
+<!-- preload fonts -->
+<link rel="preload" href="fonts/VentiCF-Regular.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="fonts/VentiCF-Bold.woff" as="font" type="font/woff" crossorigin>
+<!-- preload fonts -->
+<meta name="apple-mobile-web-app-title" content="Kosmeticky salon Daniela Jakubcova">
+<meta name="application-name" content="Kosmeticky salon Daniela Jakubcova">
+<meta name="msapplication-TileColor" content="#aeaeae">
+<meta name="msapplication-config" content="images/icon/favicon/browserconfig.xml">
+<meta name="description" content="Chcete si dopřát perfektní kosmetické služby spojené s hýčkáním a potrpíte si na dokonalý servis, jste na tom správném místě. Kroměříž (Zlínský kraj)">
+<meta name="robots" content="index,follow" />
+<!-- favicon -->
+
+<!-- OG Image -->
+<meta property="og:title" content="Kosmetický salon Daniela Jakubcová">
+<meta property="og:description" content="Chcete si dopřát perfektní kosmetické služby spojené s hýčkáním a potrpíte si na dokonalý servis, jste na tom správném místě. Kroměříž (Zlínský kraj), Sothys Paris.">
+<meta property="og:image" content="/images/pictures/jpg/header-600.jpg">
+<meta property="og:url" content="https://www.kosmetika-daniela.cz/index.html">
+<meta property="og:site_name" content="Kosmetický salon Daniela Jakubcová">
+<meta name="twitter:card" content="summary_large_image">
+<!-- OG Image -->
+
+<!-- bar color iOS -->
+    <meta name="theme-color" content="#ebebeb" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#45545f" media="(prefers-color-scheme: dark)">
+<!-- bar color iOS -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css"> 
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+
+    <title>Kosmetický salon Daniela Jakubcová v Kroměříži | Sothys Paris</title> 
+
+
+</head>
+<body>
+    
+    <header id="to_top">
+
+        <nav>
+            <input type="checkbox" id="active">
+            <label for="active" class="menu-btn" id='show' onClick='showDialog()'><span>menu</span></label>
+            <a target="_blank" class="menu-reservation" href="rezervace.html" title="Vytvořit rezervaci"><span>rezervace</span></a>
+            <div class="menu__full-screen">
+                <ul>
+                    <li class="actual"><a href="index.html">úvod</a></li>
+                    <li><a href="pletove-osetreni.html">služby&nbsp;salonu</a></li>
+                    <li><a href="reference.html">reference</a></li>
+                    <li><a href="fotogalerie.html">fotogalerie</a></li>
+                    <li><a href="kontakty.html">kontakty</a></li>
+                </ul>
+            </div>
+    
+            <div class="menu__big">
+                <ul>
+                    <li class="actual"><a href="index.html">úvod<div class="dot"></div></a></li>
+                    <li><a href="pletove-osetreni.html">služby&nbsp;salonu</a></li>
+                    <li><a href="reference.html">reference</a></li>
+                    <li><a href="fotogalerie.html">fotogalerie</a></li>
+                    <li><a href="kontakty.html">kontakty</a></li>
+                    <li id="menu-reservation">
+                        <a target="_blank" href="rezervace.html" title="Vytvořit rezervaci"> 
+                            <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+                            <lord-icon
+                            src="https://cdn.lordicon.com/hjeefwhm.json"
+                            trigger="hover"
+                            colors="primary:#ffffff"
+                            style="width:25px;height:25px">
+                            </lord-icon>
+                        <span class="reservation-icon_text">rezervace</span>
+                    </a></li>                
+                </ul>
+            </div>
+        </nav>
+
+    <div class="header__block">
+        <div class="logo"><img src="images/icon/logo-salon.svg" width="100" height="100" alt="Daniela-Jakubcová_logo-salonu"></div>
+        <div class="header__line"></div>
+        <div class="certifikace">
+            <div class="certifikace__header"><h1>Certifikovaný kosmetický salon<br>Sothys Paris v Kroměříži</h1></div>
+            <div class="certifikace__line"></div>
+            <div class="certifikace__perex">Pravidelně oceňovaný jako VIP partner</div>
+        </div>
+        <div class="logo__Sothys"><img src="images/icon/logo-sothys.svg" width="100" height="100" alt="Sothys-Paris_logo-francouzské-kosmetiky"></div>
+    </div>
+
+    <div class="header-photo">
+
+        <picture>
+            <source media="(min-width: 1000px)" 
+                srcset="images/pictures/webp/header-1650.webp"
+                type="image/webp">
+            <source media="(max-width: 999px)"
+                srcset="images/pictures/webp/header-1000.webp" 
+                type="image/webp">
+            <source media="(max-width: 800px)" 
+                srcset="images/pictures/webp/header-800.webp"
+                type="image/webp">
+            <source media="(max-width: 600px)" 
+                srcset="images/pictures/webp/header-600.webp"
+                type="image/webp">
+            
+
+            <source media="(min-width: 1000px)"
+                srcset="images/pictures/jpg/header-1650.jpg" 
+                type="image/jpeg">
+            <source media="(max-width: 999px)"
+                srcset="images/pictures/jpg/header-1000.jpg" 
+                type="image/jpeg">
+            <source media="(max-width: 800px)"
+                srcset="images/pictures/jpg/header-800.jpg" 
+                type="image/jpeg">
+            <source media="(max-width: 600px)"
+                srcset="images/pictures/jpg/header-600.jpg" 
+                type="image/jpeg">
+
+
+            <img 
+                srcset="images/pictures/jpg/header-600.jpg 600w,
+                images/pictures/jpg/header-800.jpg 800w, 
+                images/pictures/jpg/header-1000.jpg 1000w,
+                images/pictures/jpg/header-1650.jpg 1200w"
+                width="100" height="100"
+            
+                sizes="(max-width: 1200px) 1200px,
+                        (max-width: 1000px) 1000px,
+                        (max-width: 800px) 800px,
+                        (max-width: 600px) 600px"
+            
+                src="images/pictures/jpg/header-1650.jpg" 
+            
+                alt="fotka-kabiny-v-salonu">
+            </picture>
+
+    </div>
+
+    </header>
+
+    <main>
+
+        <section class="main__block">
+
+            <!-- misto pro dovolenou --
+            <article class="main__important holidays">
+                <h4>DOVOLENÁ</h4> <b>Ve dnech 7. 8. - 11. 8. 2023 je salon z důvodu dovolené zavřen.</b>
+            </article>
+            <!-- misto pro dovolenou -->
+
+            <article class="about-us">
+                <p>
+                    Jsme zavedený kosmetický salon s jednoduchou filozofií &bdquo;méně je více&ldquo;, a proto nepodléháme dočasným trendům.
+                    Pokud patříte mezi klienty, kteří si chtějí dopřát perfektní služby spojené s hýčkáním a potrpíte si na dokonalý servis,<strong> jste na tom správném&nbsp;místě.</strong>
+                </p>
+
+                <ul>
+                    <li class="reservation__link"><a href="#rezervace">objednat&nbsp;termín</a></li>
+                    <li class="about-us__link"><a href="o-salonu.html">více&nbsp;o&nbsp;salonu</a></li>
+                </ul>
+            </article>
+
+            <article class="main__important">
+
+                <div class="forms">
+        
+                    <h2>Dárkový poukaz na&nbsp;ošetření</h2>
+                    <h3>Vyberte si dárkový poukaz dle Vašich představ</h3>
+            
+                    <form action="voucher-contact.html" method="POST" id="dle-hodnoty">
+                        
+                        <div class="hodnota">Vybrat&nbsp;hodnotu
+                            <select name="selectVolue" id="paper-value" onchange="ShowTextarea()">
+            
+                                <option selected value="">vyberte</option>
+                                <option value="4000">4.000 Kč</option>
+                                <option value="3000">3.000 Kč</option>
+                                <option value="2000">2.000 Kč</option>
+                                <option value="1000">1.000 Kč</option>
+                                <option value="jinaHodnota">jiná hodnota (uveďte níže)</option>
+                            </select>
+            
+                            <textarea name="text-message" id="textareaInput" placeholder="libovolná hodnota v Kč" style="overflow:hidden"></textarea>
+            
+                            <div id="errorEmpty"></div>
+            
+                            <a href="javascript: void(0)" id="odeslatHodnotu" onclick="toLocalStorage()">pokračovat dále</a>
+                            
+                        </div>
+                    
+                    </form>
+            
+                    <form id="dle-osetreni">
+                        
+                        <div class="osetreni">Na&nbsp;konkrétní ošetření
+                            <p>Pokud váháte s výběrem, kontaktujte nás, rády Vám poradíme. Případně vyberte poukaz dle hodnoty.</p>
+                            <a href="voucher-dtb.html">vybrat ošetření</a>
+                        </div>
+                    </form>
+             
+                </div>
+
+
+
+            </article>
+        </section>
+
+        <section class="home-video">
+            <div class="important__left">
+                <p>Naše video z&nbsp;přístrojového ošetření&nbsp;pleti<br>Micro Dermobooster&nbsp;<sup>TM</sup></p>
+                <p><a href="pletove-osetreni.html#pristrojove-osetreni">více informací o&nbsp;ošetření</a></p>
+            </div>
+
+            <div class="important__right">
+                <a target="_blank" title="Odkaz na video uložené na youtube.com" href="https://www.youtube.com/watch?v=iHJKtsEs83w">
+                    <div class="video__img">
+
+                        <svg width="90px" height="90px" viewBox="0 0 91 91" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+                            <g transform="matrix(1,0,0,1,-674.704,-2323.46)">
+                                <g transform="matrix(1,0,0,1,7.95808e-13,665)">
+                                    <g transform="matrix(-1.24098e-16,0.687083,-0.594556,-1.11336e-16,2252.71,59.2223)">
+                                        <path d="M2393.5,2543L2422,2600L2365,2600L2393.5,2543Z"/>
+                                    </g>
+                                </g>
+                                <g transform="matrix(1,0,0,1,7.95808e-13,665)">
+                                    <g transform="matrix(0.687083,0,0,0.687083,-935.817,-74.3634)">
+                                        <path d="M2409.93,2522C2446.31,2522 2475.85,2551.54 2475.85,2587.93C2475.85,2624.31 2446.31,2653.85 2409.93,2653.85C2373.54,2653.85 2344,2624.31 2344,2587.93C2344,2551.54 2373.54,2522 2409.93,2522ZM2409.93,2530.73C2441.49,2530.73 2467.12,2556.36 2467.12,2587.93C2467.12,2619.49 2441.49,2645.12 2409.93,2645.12C2378.36,2645.12 2352.73,2619.49 2352.73,2587.93C2352.73,2556.36 2378.36,2530.73 2409.93,2530.73Z"/>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                        
+                        <picture>
+                            <source
+                                srcset="images/pictures/webp/video-img.webp"
+                                type="image/webp">
+                            
+                            <source
+                                srcset="images/pictures/jpg/video-img.jpg" 
+                                type="image/jpeg">
+        
+                            <img 
+                                srcset="images/pictures/jpg/video-img.jpg"
+                                width="100" height="100"
+                            
+                                src="images/pictures/jpg/video-img.jpg" 
+                            
+                                alt="video-z-ošetření">
+                            </picture>
+
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section class="reservation" id="rezervace">
+            <div class="reservation__block" >
+
+                <div class="reservation-header">
+                    <h2>Rezervace termínu <span class="online">online</span></h2>
+                    <p class="perex">Jednoduše, rychle, efektivně, přesně takto si můžete rezervovat svůj&nbsp;termín&nbsp;u&nbsp;nás v&nbsp;salonu</p>
+                </div>
+                    <a target="_blank" href="rezervace.html" title="Vytvořit rezervaci">
+                        vytvořit&nbsp;rezervaci
+                    </a>
+                <div class="reservation-notes">
+                    <p>Pokud se chcete objednat na <strong>více služeb při jedné návštěvě,</strong> (např.&nbsp;dárkový balíček služeb) <strong>zavolejte&nbsp;nám</strong> a společně vybereme nejvhodnější termín.</p>
+                    <p class="note">Rezervace se otevře v nové záložce prohlížeče.</p>
+                </div>
+            </div>
+        </section> 
+
+        <section class="for-you">
+            <h2>Pro Vaše pohodlí a komfort</h2>
+            
+            <article class="list">
+
+                <div class="parking">
+                    <div class="parking-number">2</div>
+                    <div class="text-description"> 
+                        <h5>parkovací místa</h5>
+                        <div class="description">
+                            <span class="upper">zdarma</span> před salonem
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clima">
+                    <h5>klimatizované místnosti</h5>
+                    <div class="description">
+                        pro tělová i pleťová ošetření
+                    </div>
+                </div>
+
+                <div class="wifi">
+                    <h5>Wi-Fi</h5>
+                    <div class="description">
+                        připojení
+                    </div>
+                </div>
+
+                <div class="free-entry">
+                    <h5>bezbariérový přístup a  prostředí salonu</h5>
+                    <div class="description">
+                        Myslíme také na maminky s malými dětmi.<br>Můžete přijet s kočárkem.
+                    </div>
+                </div>
+
+                <div class="pay">
+                    <h5>bezhotovostní platby</h5>
+                    <div class="description">
+                        produktů pro domácí péči
+                    </div>
+                </div>
+
+            </article>
+
+        </section>
+
+    </main>
+    
+    <footer>
+
+        <section class="footer-main">
+    
+            <ul>
+                <li>Menu</li>
+                <li class="footer__menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="12px" viewBox="0 0 13 9" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:6;">
+                    <path d="M8.5,0.5l3.931,3.931l-3.967,3.967l3.967,-3.967l-11.931,0" style="fill:none;stroke-width:1px;"/></svg>
+                    <a href="pletove-osetreni.html">služby salonu</a>
+                </li>
+                <li class="footer__menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="12px" viewBox="0 0 13 9" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:6;">
+                    <path d="M8.5,0.5l3.931,3.931l-3.967,3.967l3.967,-3.967l-11.931,0" style="fill:none;stroke-width:1px;"/></svg>
+                    <a href="reference.html">reference</a>
+                </li>
+                <li class="footer__menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="12px" viewBox="0 0 13 9" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:6;">
+                    <path d="M8.5,0.5l3.931,3.931l-3.967,3.967l3.967,-3.967l-11.931,0" style="fill:none;stroke-width:1px;"/></svg>
+                    <a href="fotogalerie.html">fotogalerie</a>
+                </li>
+                <li class="footer__menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="12px" viewBox="0 0 13 9" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:6;">
+                    <path d="M8.5,0.5l3.931,3.931l-3.967,3.967l3.967,-3.967l-11.931,0" style="fill:none;stroke-width:1px;"/></svg>
+                    <a href="kontakty.html">kontakty</a>
+                </li>
+                <li>
+                    <div class="info-cookie">cookie
+                        <div class="extra-info">Zásady užívání cookie najdete <a href="cookie/cookie-policy.html" target="_new">zde</a>.</div>
+                    </div>
+                </li>
+            </ul>
+    
+            <ul>
+                <li>Rychlé odkazy</li>
+                <li class="footer__menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="12px" viewBox="0 0 13 9" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:6;">
+                    <path d="M8.5,0.5l3.931,3.931l-3.967,3.967l3.967,-3.967l-11.931,0" style="fill:none;stroke-width:1px;"/></svg>
+                    <a target="_blank" href="rezervace.html" title="Vytvořit rezervaci">
+                    rezervovat termín ošetření</a>
+                </li>
+                <li class="footer__menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="12px" viewBox="0 0 13 9" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:6;">
+                    <path d="M8.5,0.5l3.931,3.931l-3.967,3.967l3.967,-3.967l-11.931,0" style="fill:none;stroke-width:1px;"/></svg>
+                    <a href="index.html#objednat-poukaz">objednat poukaz</a>
+                </li>
+            </ul>
+    
+            <ul>
+                <li>Sledujte salon na sociálních sítích</li>
+                <li class="facebook">
+                    <a target="_blank" href="https://www.facebook.com/KosmetikaDanielaJakubcova/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="20px" viewBox="0 0 20 20" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+                    <path id="fb-icon" d="M19,9.5c0,-5.247 -4.253,-9.5 -9.5,-9.5c-5.247,0 -9.5,4.253 -9.5,9.5c0,4.742 3.474,8.672 8.016,9.385l-0,-6.639l-2.412,0l-0,-2.746l2.412,0l-0,-2.093c-0,-2.381 1.418,-3.696 3.588,-3.696c1.039,-0 2.126,0.185 2.126,0.185l0,2.338l-1.197,0c-1.181,0 -1.549,0.733 -1.549,1.484l0,1.782l2.635,0l-0.421,2.746l-2.214,0l0,6.639c4.542,-0.713 8.016,-4.643 8.016,-9.385Z" style="fill:#1877F2; fill-opacity:0.85;fill-rule:nonzero;"/></svg>
+                    &nbsp;|&nbsp;Facebook</a>
+                </li>
+                <li class="instagram">
+                    <a target="_blank" href="https://www.instagram.com/kosmetikadanielajakubcova/?hl=cs">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="20px" viewBox="0 0 20 20" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+                    <path d="M15.616,4.402c-0,0.626 -0.507,1.134 -1.134,1.134c-0.625,-0 -1.132,-0.508 -1.132,-1.134c-0,-0.625 0.507,-1.133 1.133,-1.133c0.626,-0 1.133,0.508 1.133,1.133Zm-6.174,8.188c-1.738,-0 -3.147,-1.41 -3.147,-3.148c-0,-1.738 1.409,-3.147 3.147,-3.147c1.738,-0 3.148,1.409 3.148,3.147c-0,1.738 -1.41,3.148 -3.148,3.148Zm0,-7.996c-2.678,-0 -4.848,2.17 -4.848,4.848c-0,2.678 2.17,4.849 4.848,4.849c2.678,-0 4.849,-2.171 4.849,-4.849c-0,-2.678 -2.171,-4.848 -4.849,-4.848Zm0,-2.893c2.521,0 2.82,0.009 3.816,0.056c0.92,0.042 1.42,0.196 1.753,0.325c0.441,0.171 0.755,0.375 1.086,0.706c0.33,0.33 0.535,0.644 0.706,1.086c0.129,0.332 0.283,0.833 0.325,1.753c0.045,0.996 0.055,1.294 0.055,3.816c0,2.521 -0.009,2.82 -0.055,3.815c-0.042,0.921 -0.196,1.421 -0.325,1.754c-0.171,0.441 -0.376,0.755 -0.706,1.086c-0.331,0.33 -0.645,0.534 -1.086,0.706c-0.333,0.129 -0.833,0.282 -1.753,0.325c-0.996,0.045 -1.295,0.055 -3.816,0.055c-2.521,0 -2.82,-0.009 -3.816,-0.055c-0.92,-0.043 -1.42,-0.196 -1.753,-0.325c-0.441,-0.172 -0.755,-0.376 -1.086,-0.706c-0.33,-0.331 -0.535,-0.645 -0.706,-1.086c-0.129,-0.333 -0.283,-0.833 -0.325,-1.754c-0.046,-0.996 -0.055,-1.294 -0.055,-3.815c-0,-2.521 0.009,-2.82 0.055,-3.816c0.042,-0.92 0.196,-1.421 0.325,-1.753c0.171,-0.442 0.376,-0.756 0.706,-1.086c0.331,-0.331 0.645,-0.535 1.086,-0.706c0.333,-0.129 0.833,-0.283 1.753,-0.325c0.996,-0.046 1.294,-0.056 3.816,-0.056Zm0,-1.701c-2.564,-0 -2.886,0.011 -3.892,0.057c-1.005,0.046 -1.693,0.205 -2.293,0.439c-0.621,0.241 -1.147,0.564 -1.672,1.089c-0.525,0.525 -0.848,1.051 -1.089,1.672c-0.234,0.601 -0.393,1.288 -0.439,2.293c-0.046,1.006 -0.057,1.328 -0.057,3.892c-0,2.564 0.011,2.887 0.057,3.893c0.046,1.005 0.205,1.691 0.439,2.292c0.241,0.621 0.564,1.147 1.089,1.673c0.524,0.525 1.051,0.848 1.672,1.089c0.601,0.234 1.288,0.393 2.293,0.439c1.007,0.046 1.328,0.057 3.892,0.057c2.564,-0 2.887,-0.011 3.893,-0.057c1.005,-0.046 1.691,-0.205 2.292,-0.439c0.621,-0.241 1.147,-0.564 1.673,-1.089c0.525,-0.525 0.848,-1.051 1.089,-1.673c0.234,-0.601 0.393,-1.287 0.439,-2.292c0.046,-1.007 0.057,-1.329 0.057,-3.893c-0,-2.564 -0.011,-2.886 -0.057,-3.892c-0.046,-1.005 -0.205,-1.692 -0.439,-2.293c-0.241,-0.621 -0.564,-1.147 -1.089,-1.672c-0.525,-0.525 -1.051,-0.848 -1.673,-1.089c-0.601,-0.234 -1.287,-0.393 -2.292,-0.439c-1.006,-0.046 -1.329,-0.057 -3.893,-0.057Z" style="fill:url(#_Radial1);fill-rule:nonzero;"/>
+                    <defs><radialGradient id="_Radial1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(24.1298,0,0,24.1298,2.81956,18.9501)"><stop offset="0" style="stop-color:#ffb140;stop-opacity:1"/><stop offset="0.26" style="stop-color:#ff5445;stop-opacity:1"/><stop offset="0.6" style="stop-color:#fc2b82;stop-opacity:1"/><stop offset="1" style="stop-color:#8e40b7;stop-opacity:1"/></radialGradient></defs></svg>
+                    &nbsp;|&nbsp;Instagram</a>
+                </li>
+            </ul>
+    
+        </section>
+    
+        <article class="footer-bottom">
+            <p class="adress">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="-1 -1 20 20" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:20;">
+                    <path d="M4.927,7.5l4.181,-0c0.104,-0 0.204,0.041 0.277,0.115c0.074,0.073 0.115,0.173 0.115,0.276c0,1.093 0,4.163 0,5.235c0,0.099 0.039,0.194 0.11,0.264c0.07,0.071 0.165,0.11 0.264,0.11c0.76,0 2.476,0 3.243,0c0.102,0 0.199,-0.04 0.271,-0.112c0.072,-0.072 0.112,-0.169 0.112,-0.271c0,-1.252 0,-5.239 0,-6.89c-0,-0.459 -0.212,-0.891 -0.575,-1.172c-1.207,-0.935 -3.999,-3.096 -5.253,-4.067c-0.372,-0.288 -0.891,-0.289 -1.264,-0.004c-1.268,0.969 -4.099,3.133 -5.324,4.07c-0.368,0.281 -0.584,0.718 -0.584,1.181c-0,1.647 -0,5.592 -0,6.863c-0,0.107 0.042,0.209 0.118,0.284c0.075,0.076 0.177,0.118 0.284,0.118c0.759,0 2.397,0 3.173,-0c0.113,-0 0.221,-0.045 0.301,-0.124c0.079,-0.08 0.124,-0.188 0.124,-0.301c-0,-1.101 -0,-4.043 -0,-5.148c-0,-0.113 0.045,-0.222 0.125,-0.302c0.08,-0.08 0.189,-0.125 0.302,-0.125Z" style="fill:none;stroke:#212121;stroke-width:1px;"/></svg>
+                <strong>Adresa salonu: </strong><address>Albertova&nbsp;2350/30, Kroměříž</address>   
+            </p>
+            <p class="copy">
+                &#169;&nbsp;2015&nbsp;&ndash;&nbsp;<span id="actual-year"></span>&nbsp;|&nbsp; návrh a provedení&nbsp;<a href="mailto:tomas.jakubec@outlook.com">Tomáš&nbsp;Jakubec</a>
+            </p>
+        
+            <a href="#to_top">
+                <div class="to_top">zpět nahoru</div>
+            </a>
+        </article>
+    
+    </footer>
+
+    <script>
+        // smazání LocalStorage pro čistý konfigurátor poukazu
+        localStorage.clear();
+    </script>
+
+    <script src="scripts/actual-year-footer.js"></script>
+    <script src="scripts/voucher-value_validation-localstorage.js"></script>
+    <script src="scripts/voucher-dtb-offer.js"></script>
+    <!-- <script src="cookie/cookieconsent.js"></script> -->
+    
+    <script defer src="node_modules/vanilla-cookieconsent/dist/cookieconsent.js"></script>
+    <script defer src="cookie/cookieconfig.js"></script>
+
+</body>
+</html>
